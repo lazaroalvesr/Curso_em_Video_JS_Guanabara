@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Qual a sua Nacionalidade</h1>
+    Seu País: <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var pais = BRL
+
+            var nacional = window.document.getElementById('nac')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Sua nacionalidade é ${pais}`
+            if ( pais == 'Brasil'){
+                console.log('Voce é Brasileiro!')
+            }else{
+                res.innerText += `Sua nacionalidade é Estrangeira`
+            }window.document.write(pais)
+        }
+    </script>
+</body>
+
+</html>
